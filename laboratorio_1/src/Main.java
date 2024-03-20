@@ -42,7 +42,12 @@ int opcion;
                     System.out.print("ingrese el segundo numero: ");
                     b= sc.nextInt();
                     System.out.print("Respuesta:");
-                    System.out.print(Division(a,b));
+                    if(b==0){
+                        System.out.print("Error ");
+                    }
+                    else {
+                        System.out.print(Division(a, b));
+                    }
                     break;
                 case 5:
                     System.out.print("Gracias por su participacion");
